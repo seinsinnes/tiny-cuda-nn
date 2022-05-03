@@ -123,7 +123,7 @@ endif()
 
 if (MSVC)
 else()
-	list(APPEND CUDA_NVCC_FLAGS "-Xcompiler=-mf16c")
+	#list(APPEND CUDA_NVCC_FLAGS "-Xcompiler=-mf16c")
 	list(APPEND CUDA_NVCC_FLAGS "-Xcompiler=-Wno-float-conversion")
 	list(APPEND CUDA_NVCC_FLAGS "-Xcompiler=-fno-strict-aliasing")
 endif()

@@ -59,7 +59,6 @@ if torch.cuda.is_available():
 	if os.name == "posix":
 		cflags = ["-std=c++14"]
 		nvcc_flags += [
-			"-Xcompiler=-mf16c",
 			"-Xcompiler=-Wno-float-conversion",
 			"-Xcompiler=-fno-strict-aliasing",
 		]
